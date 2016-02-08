@@ -1,0 +1,67 @@
+{
+    "snippet template": {
+        "prefix": "st",
+        "body": [
+            "",
+            "\"$1\": {",
+            "    \"prefix\": \"$2\",",
+            "    \"body\": [",
+            "        \"$3\"",
+            "    ],",
+            "    \"description\": \"$1\"",
+            "},"
+        ],
+        "description": "snippet template"
+    },
+    "snippet template 2 lines": {
+        "prefix": "st2",
+        "body": [
+            "",
+            "\"$1\": {",
+            "    \"prefix\": \"$2\",",
+            "    \"body\": [",
+            "       \"$3\",",
+            "       \"$4\"",
+            "    ],",
+            "    \"description\": \"$1\"",
+            "},"
+        ],
+        "description": "snippet template 2 lines"
+    },
+    "snippet template 3 lines": {
+        "prefix": "st3",
+        "body": [
+            "",
+            "\"$1\": {",
+            "    \"prefix\": \"$2\",",
+            "    \"body\": [",
+            "       \"$3\",",
+            "       \"$4\",",
+            "       \"$5\"",
+            "    ],",
+            "    \"description\": \"$1\"",
+            "},"
+        ],
+        "description": "snippet template 3 lines"
+    },
+    "project.json dependencies section": {
+        "prefix": "pjd",
+        "body": [
+            "",
+            "\"dependencies\": {",
+            "  \"$1\": \"$2\"",
+            "},"
+        ],
+        "description": "project.json dependencies section  "
+    },
+    "project.json file scripts section": {
+        "prefix": "pjs",
+        "body": [
+            "",
+            "\"scripts\":{",
+            "  \"$1\": \"$2\"",
+            "},"
+        ],
+        "description": "project.json scripts section"
+    }
+}

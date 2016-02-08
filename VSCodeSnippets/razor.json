@@ -1,0 +1,9 @@
+{
+    "componet invoke": {
+        "prefix": "ci",
+        "body": [
+            "@Component.Invoke(\"$1\")"
+        ],
+        "description": "componet invoke"
+    }
+}

@@ -1,0 +1,3 @@
+System.NotImplementedException: Metoda lub operacja nie jest zaimplementowana.
+   w alg.logic.NextStep.Compile() w C:\task1\alg\logic\NextStep.cs:wiersz 9
+   w alg.Program.Main() w C:\task1\alg\Program.cs:wiersz 21

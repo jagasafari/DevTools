@@ -1,0 +1,149 @@
+{
+    "class template": {
+        "prefix": "ct",
+        "body": [
+            "namespace $1{",
+            "   public class $2{",
+            "       ",
+            "   }",
+            "}"
+        ],
+        "description": "class template"
+    },
+    "interface template": {
+        "prefix": "it",
+        "body": [
+            "namespace $1{",
+            "   public interface $2{",
+            "   }",
+            "}"
+        ],
+        "description": "interface template"
+    },
+    "Constructor": {
+        "prefix": "cto",
+        "body": [
+            "public $1(){",
+            "   $2",
+            "}"
+        ],
+        "description": "Constructor"
+    },
+    "Auto property": {
+        "prefix": "ap",
+        "body": [
+            "public $1 $2 {get; set;}"
+        ],
+        "description": "public auto property"
+    },
+    "Public string auto property": {
+        "prefix": "sap",
+        "body": [
+            "public string $1 {get; set;}"
+        ],
+        "description": "public string auto-property"
+    },
+    "String property": {
+        "prefix": "sp",
+        "body": [
+            "private string _$1;",
+            "public string $2 {get{ return _$1;} set { _$1=Check.NotNullOrWhiteSpace(value,nameof(value));}}"
+        ],
+        "description": "string property"
+    },
+    "object property not null check": {
+        "prefix": "op",
+        "body": [
+            "private $1 _$2;",
+            "public $1 $3 {get{return _$2;}set{_$2=Check.NotNull(value,nameof(value));}}"
+        ],
+        "description": "object property not null check"
+    },
+    "check property": {
+        "prefix": "cp",
+        "body": [
+            "private $1 _$2;",
+            "public $1 $3 {get{return _$2;}set{_$2=Check.$4(value,nameof(value));}}"
+        ],
+        "description": "check property"
+    },
+    "Static method": {
+        "prefix": "sm",
+        "body": [
+            "",
+            "public static $1 $2($3){$4}"
+        ],
+        "description": "static method"
+    },
+    "Action method": {
+        "prefix": "am",
+        "body": [
+           "public IActionResult $1($2){",
+           "return View($3);}"
+        ],
+        "description": "Action method"
+    },
+    "priavte static method": {
+        "prefix": "psm",
+        "body": [
+            "private static $1 $2($3){",
+            "   $4",
+            "}"
+        ],
+        "description": "private static method"
+    },
+    "priavte static extension method": {
+        "prefix": "psem",
+        "body": [
+            "private static $1 $2(this $3 $4){",
+            "   $5",
+            "}"
+        ],
+        "description": "private static extension method"
+    },
+    "ViewComponent invoke method": {
+        "prefix": "vcim",
+        "body": [
+           "public IViewComponentResult Invoke(){",
+           "    $1",
+           "}"
+        ],
+        "description": "ViewComponent invoke method"
+    },
+    "private field": {
+        "prefix": "pf",
+        "body": [
+            "private $1 _$2;"
+        ],
+        "description": "priavte field"
+    },
+    "Check not null": {
+        "prefix": "cnn",
+        "body": [
+            "Check.NotNull($1)"
+        ],
+        "description": "Check NotNull"
+    },
+    "Check string not null or white space": {
+        "prefix": "cs",   
+        "body": [
+            "Check.NotNullOrWhiteSpace($1)"
+        ],
+        "description": "Check string not null or white space"
+    },
+    "Check numeric not negative": {
+        "prefix": "cn",
+        "body": [
+            "Check.NotNegative($1)"
+        ],
+        "description": "check numeric value not negative"
+    },
+    "Console Write Line": {
+        "prefix": "cw",
+        "body": [
+            "Console.WriteLine($1);",
+            "$2"
+        ],
+        "description": "write line to console"
+    }
+}
